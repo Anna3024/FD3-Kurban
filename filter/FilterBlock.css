@@ -1,0 +1,16 @@
+.filterBlock input {
+    margin-right: 5px;
+}
+.filterBlock li {
+    list-style-type: none;
+}
+
+.filterBlock ul {
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 0;
+    width: 235px;
+    height: 200px;
+    overflow: auto;
+    border: 1px solid black;
+}
