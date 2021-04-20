@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="ShopBlock.css">
     <link rel="stylesheet" href="ShopTable.css">
-    <title>ishop</title>
+    <link rel="stylesheet" href="ShopItem.css">
+    <title>ishop2</title>
 </head>
 <body>
     <div id="containerTable"></div>
-    <div id="container"></div>
     
     <script src="https://unpkg.com/react@15/dist/react.js"></script> 
     <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
 
-    <script src="ShopBlock.js"></script>
     <script src="ShopTable.js"></script>
+    <script src="ShopItem.js"></script>
 
     <script>
         const shopNameText = "TeaShop";
@@ -76,11 +75,6 @@
             count: 19,
             },
         ];
-        
-        ReactDOM.render(
-            React.createElement(ShopBlock, {shopName: shopNameText, catalog: teaCatalog}),
-            document.getElementById('container')
-        );
 
         ReactDOM.render(
             React.createElement(ShopTable, {shopName: shopNameText, catalog: teaCatalog}),
