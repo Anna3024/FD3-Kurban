@@ -10,7 +10,7 @@ let FilterBlock = React.createClass({
         return {
             checkboxState: false,
             inputText: "",
-            wordsArr: JSON.parse(JSON.stringify(this.props.words)),
+            wordsArr: this.props.words.slice(),
         }
     },
 
@@ -28,13 +28,13 @@ let FilterBlock = React.createClass({
         this.setState({
             checkboxState: false, 
             inputText: "",
-            wordsArr: JSON.parse(JSON.stringify(this.props.words)),
+            wordsArr: this.props.words.slice(),
         })
     },
 
     filterWordArr: function(text, state) {
 
-        let resultArr = (text!="")?JSON.parse(JSON.stringify(this.props.words)).filter((v)=>v.indexOf(text)!=-1):JSON.parse(JSON.stringify(this.props.words));
+        let resultArr = (text!="")?this.props.words.slice().filter((v)=>v.indexOf(text)!=-1):this.props.words.slice();
 
         this.setState({wordsArr: state?resultArr.sort():resultArr});
     },
