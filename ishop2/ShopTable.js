@@ -51,7 +51,7 @@ let ShopTable = React.createClass({
         return React.DOM.div( null, 
             React.DOM.h1( {className:'shopName'}, this.props.shopName), 
             React.DOM.table( {className:'shopTable'}, 
-                React.DOM.thead(null, React.DOM.tr(null, tableHeader.map((v)=> React.DOM.th(null, v)))), 
+                React.DOM.thead(null, React.DOM.tr(null, tableHeader.map((v,i)=> React.DOM.th(null, v)))), 
                 React.DOM.tbody(null, catalogCodeTable))
         );
     }
