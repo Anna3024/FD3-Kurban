@@ -38,20 +38,19 @@ let ShopTable = React.createClass({
     },
 
     render: function() {
-
         let tableHeader = ["Name", "Price", "URL", "Quantity", "Control"];
 
         let catalogCodeTable = this.state.catalogList.map((v)=>
             React.createElement (ShopItem, {
                 name: v.name, price: v.price, image: v.image,
-                count: v.count, code: v.code, cbSelected: this.itemSelected, selectedItem: this.state.selectedItem, cbDelete: this.itemDelete
+                count: v.count, code: v.code, key: v.code, cbSelected: this.itemSelected, selectedItem: this.state.selectedItem, cbDelete: this.itemDelete
             })     
         );
         
         return React.DOM.div( null, 
             React.DOM.h1( {className:'shopName'}, this.props.shopName), 
             React.DOM.table( {className:'shopTable'}, 
-                React.DOM.thead(null, React.DOM.tr(null, tableHeader.map((v,i)=> React.DOM.th(null, v)))), 
+                React.DOM.thead(null, React.DOM.tr(null, tableHeader.map((v,i)=> React.DOM.th({key: i}, v)))), 
                 React.DOM.tbody(null, catalogCodeTable))
         );
     }
