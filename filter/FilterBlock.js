@@ -45,7 +45,7 @@ let FilterBlock = React.createClass({
             React.DOM.input({type: 'checkbox', name: 'alphabetOrder', onClick: this.changeCheckboxState, checked: this.state.checkboxState}),
             React.DOM.input({type: 'text', name: 'filterText', onChange:this.changeInputText,  value:this.state.inputText}),
             React.DOM.input({type: 'button', value: 'сброс', onClick: this.resetFilter}),
-            React.DOM.ul(null, this.state.wordsArr.map((v,i) => React.DOM.li(null, v)))
+            React.DOM.ul(null, this.state.wordsArr.map((v,i) => React.DOM.li({key: i}, v)))
         )
     }
 })
