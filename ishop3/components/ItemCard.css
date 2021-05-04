@@ -1,0 +1,30 @@
+.card {
+    margin: 5px;
+    padding-left: 20px;
+    
+}
+.card>h2, .card>h3 {
+    color: #3F3F3F;
+}
+.card>p {
+    color: #A5A5A5;
+}
+.card>label {
+    display: block;
+    margin: 5px;
+}
+.card>label {
+    display: inline-block;
+    margin: 5px;
+    width: 350px;
+}
+.card>label>input {
+    float: right;
+}
+.card [type="button"] {
+    display: inline;
+    margin-left: 5px;
+}
+.card span {
+    color: red;
+}

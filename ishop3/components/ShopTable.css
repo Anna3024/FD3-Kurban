@@ -1,0 +1,26 @@
+.shopName {
+    text-align: center;
+}
+.shopTable {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+.shopTable td,
+.shopTable th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 3px;
+}
+.shopTable td:first-child {
+    text-align: left;
+}
+[type="button"] {
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.shopTable [type="button"]{
+    display: inline-block;
+}
