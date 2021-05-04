@@ -1,0 +1,56 @@
+[
+    {"code": "tea2",
+    "image" : "img/tea2.png",
+    "name" :  "Юньнань Юнь",
+    "price": 20,
+    "count": 12
+    },
+    {"code": "tea3",
+    "image" : "img/tea3.png",
+    "name" :  "Бай Му Дань",
+    "price": 18,
+    "count": 15
+    },
+    {"code": "tea4",
+    "image" : "img/tea4.png",
+    "name" :  "Лушань Юнь",
+    "price": 23,
+    "count": 23
+    },
+    {"code": "tea1",
+    "image" : "img/tea1.png",
+    "name" :  "Шоу Мэй",
+    "price": 15,
+    "count": 16
+    },
+    {"code": "tea6",
+    "image" : "img/tea6.png",
+    "name" :  "Хей ча",
+    "price": 19,
+    "count": 38
+    },
+    {"code": "tea5",
+    "image" : "img/tea5.png",
+    "name" :  "Хун ча",
+    "price": 21,
+    "count": 48
+    },
+    {"code": "tea7",
+    "image" : "img/tea7.png",
+    "name" :  "Люй ча",
+    "price": 25,
+    "count": 2
+    },
+    {"code": "tea8",
+    "image" : "img/tea8.png",
+    "name" :  "Бай ча",
+    "price": 30,
+    "count": 15
+    },
+    {"code": "tea9",
+    "image" : "img/tea9.jpg",
+    "name" :  "Хуан ча",
+    "price": 24,
+    "count": 19
+    }
+]
