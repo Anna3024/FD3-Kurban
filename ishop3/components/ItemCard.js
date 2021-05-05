@@ -27,6 +27,17 @@ class ItemCard extends React.Component {
         itemImg: this.props.mode==2?"":this.props.item.image,
     }
 
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if (this.props.mode!=2 && this.props.item.code != prevProps.item.code) {
+            this.setState({
+                itemName:  this.props.item.name,
+                itemPrice: this.props.item.price,
+                itemCount: this.props.item.count,
+                itemImg: this.props.item.image,
+            })
+        }
+    }
+
     validItemName = (EO) => {
         this.setState({itemName: EO.target.value.trim()});
         this.changeInputValue(false);
@@ -107,7 +118,7 @@ class ItemCard extends React.Component {
                         <br/>
 
                         <label>Цена (BYN/100гр): 
-                            <input type='number' name='itemPrice' defaultValue={+this.state.itemPrice} onChange={this.validItemPrice}/>
+                            <input type='number' name='itemPrice' value={+this.state.itemPrice} onChange={this.validItemPrice}/>
                         </label>
                         {
                         (!this.state.itemPrice)&&<span>Please, fill the field. Value mast be a rational number greater than 0</span>
@@ -115,7 +126,7 @@ class ItemCard extends React.Component {
                         <br/>
 
                         <label>Остаток (шт/100гр): 
-                            <input type='number' name='itemCount' defaultValue={+this.state.itemCount} onChange={this.validItemCount} />
+                            <input type='number' name='itemCount' value={+this.state.itemCount} onChange={this.validItemCount} />
                         </label>
                         {
                         (!this.state.itemCount )&&<span>Please, fill the field. Value mast be a positive integer</span>
@@ -123,7 +134,7 @@ class ItemCard extends React.Component {
                         <br/>
 
                         <label>URL: 
-                            <input type='text' name='itemImg' defaultValue={this.state.itemImg} onChange={this.validItemImg}/>
+                            <input type='text' name='itemImg' value={this.state.itemImg} onChange={this.validItemImg}/>
                         </label>
                         {
                         (!this.state.itemImg)&&<span>Please, fill the field. Value mast be a valid URL</span>
