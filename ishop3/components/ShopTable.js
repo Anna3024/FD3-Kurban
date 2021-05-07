@@ -34,7 +34,9 @@ class ShopTable extends React.Component {
 
     itemDelete = (codeItem, nameItem) => {
         if (confirm(`Удалить товар "${nameItem}" (код товара "${codeItem}")?`)){
-            this.setState({catalogList: this.state.catalogList.filter((v)=>v.code!=codeItem)})
+            this.setState({catalogList: this.state.catalogList.filter((v)=>v.code!=codeItem), 
+                selectedItem: this.state.selectedItem==codeItem?null:this.state.selectedItem
+            })
         };
     }
 
