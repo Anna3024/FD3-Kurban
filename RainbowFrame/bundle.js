@@ -360,21 +360,6 @@ module.exports = invariant;
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(17);
-} else {
-  module.exports = __webpack_require__(18);
-}
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
 /*
 object-assign
 (c) Sindre Sorhus
@@ -466,6 +451,21 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 	return to;
 };
 
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
+
+if (process.env.NODE_ENV === 'production') {
+  module.exports = __webpack_require__(17);
+} else {
+  module.exports = __webpack_require__(18);
+}
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 5 */
@@ -564,41 +564,6 @@ module.exports = warning;
 /* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(process) {/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-if (process.env.NODE_ENV !== 'production') {
-  var REACT_ELEMENT_TYPE = (typeof Symbol === 'function' &&
-    Symbol.for &&
-    Symbol.for('react.element')) ||
-    0xeac7;
-
-  var isValidElement = function(object) {
-    return typeof object === 'object' &&
-      object !== null &&
-      object.$$typeof === REACT_ELEMENT_TYPE;
-  };
-
-  // By explicitly using `prop-types` you are opting into new development behavior.
-  // http://fb.me/prop-types-in-prod
-  var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(30)(isValidElement, throwOnDirectAccess);
-} else {
-  // By explicitly using `prop-types` you are opting into new production behavior.
-  // http://fb.me/prop-types-in-prod
-  module.exports = __webpack_require__(31)();
-}
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
 "use strict";
 /* WEBPACK VAR INJECTION */(function(process) {/**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -612,7 +577,7 @@ if (process.env.NODE_ENV !== 'production') {
 if (process.env.NODE_ENV !== 'production') {
   var invariant = __webpack_require__(2);
   var warning = __webpack_require__(6);
-  var ReactPropTypesSecret = __webpack_require__(9);
+  var ReactPropTypesSecret = __webpack_require__(8);
   var loggedTypeFailures = {};
 }
 
@@ -663,7 +628,7 @@ module.exports = checkPropTypes;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 9 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -682,7 +647,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 10 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -721,7 +686,7 @@ var ExecutionEnvironment = {
 module.exports = ExecutionEnvironment;
 
 /***/ }),
-/* 11 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -802,7 +767,7 @@ module.exports = EventListener;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 12 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -873,7 +838,7 @@ function shallowEqual(objA, objB) {
 module.exports = shallowEqual;
 
 /***/ }),
-/* 13 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -916,7 +881,7 @@ function containsNode(outerNode, innerNode) {
 module.exports = containsNode;
 
 /***/ }),
-/* 14 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -946,7 +911,7 @@ function focusNode(node) {
 module.exports = focusNode;
 
 /***/ }),
-/* 15 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -988,13 +953,48 @@ function getActiveElement(doc) /*?DOMElement*/{
 module.exports = getActiveElement;
 
 /***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(process) {/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+if (process.env.NODE_ENV !== 'production') {
+  var REACT_ELEMENT_TYPE = (typeof Symbol === 'function' &&
+    Symbol.for &&
+    Symbol.for('react.element')) ||
+    0xeac7;
+
+  var isValidElement = function(object) {
+    return typeof object === 'object' &&
+      object !== null &&
+      object.$$typeof === REACT_ELEMENT_TYPE;
+  };
+
+  // By explicitly using `prop-types` you are opting into new development behavior.
+  // http://fb.me/prop-types-in-prod
+  var throwOnDirectAccess = true;
+  module.exports = __webpack_require__(30)(isValidElement, throwOnDirectAccess);
+} else {
+  // By explicitly using `prop-types` you are opting into new production behavior.
+  // http://fb.me/prop-types-in-prod
+  module.exports = __webpack_require__(31)();
+}
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
 /* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _react = __webpack_require__(3);
+var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -1002,22 +1002,19 @@ var _reactDom = __webpack_require__(19);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _ShopTable = __webpack_require__(32);
+var _RainbowFrame = __webpack_require__(32);
 
-var _ShopTable2 = _interopRequireDefault(_ShopTable);
-
-var _teaCatalog = __webpack_require__(38);
-
-var _teaCatalog2 = _interopRequireDefault(_teaCatalog);
+var _RainbowFrame2 = _interopRequireDefault(_RainbowFrame);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var shopNameText = "TeaShop";
+var colors = ['red', 'orange', 'yellow', 'green', '#00BFFF', 'blue', 'purple'];
 
-_reactDom2.default.render(_react2.default.createElement(_ShopTable2.default, {
-    shopName: shopNameText,
-    catalog: _teaCatalog2.default
-}), document.getElementById('containerTable'));
+_reactDom2.default.render(_react2.default.createElement(
+    _RainbowFrame2.default,
+    { colors: colors },
+    'Hello!'
+), document.getElementById('container'));
 
 /***/ }),
 /* 17 */
@@ -1033,7 +1030,7 @@ _reactDom2.default.render(_react2.default.createElement(_ShopTable2.default, {
  This source code is licensed under the MIT license found in the
  LICENSE file in the root directory of this source tree.
 */
-var f=__webpack_require__(4),p=__webpack_require__(5);__webpack_require__(2);var r=__webpack_require__(1);
+var f=__webpack_require__(3),p=__webpack_require__(5);__webpack_require__(2);var r=__webpack_require__(1);
 function t(a){for(var b=arguments.length-1,d="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,e=0;e<b;e++)d+="\x26args[]\x3d"+encodeURIComponent(arguments[e+1]);b=Error(d+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}
 var u={isMounted:function(){return!1},enqueueForceUpdate:function(){},enqueueReplaceState:function(){},enqueueSetState:function(){}};function v(a,b,d){this.props=a;this.context=b;this.refs=p;this.updater=d||u}v.prototype.isReactComponent={};v.prototype.setState=function(a,b){"object"!==typeof a&&"function"!==typeof a&&null!=a?t("85"):void 0;this.updater.enqueueSetState(this,a,b,"setState")};v.prototype.forceUpdate=function(a){this.updater.enqueueForceUpdate(this,a,"forceUpdate")};
 function w(a,b,d){this.props=a;this.context=b;this.refs=p;this.updater=d||u}function x(){}x.prototype=v.prototype;var y=w.prototype=new x;y.constructor=w;f(y,v.prototype);y.isPureReactComponent=!0;function z(a,b,d){this.props=a;this.context=b;this.refs=p;this.updater=d||u}var A=z.prototype=new x;A.constructor=z;f(A,v.prototype);A.unstable_isAsyncReactComponent=!0;A.render=function(){return this.props.children};
@@ -1070,12 +1067,12 @@ if (process.env.NODE_ENV !== "production") {
 
 'use strict';
 
-var objectAssign$1 = __webpack_require__(4);
+var objectAssign$1 = __webpack_require__(3);
 var require$$0 = __webpack_require__(6);
 var emptyObject = __webpack_require__(5);
 var invariant = __webpack_require__(2);
 var emptyFunction = __webpack_require__(1);
-var checkPropTypes = __webpack_require__(8);
+var checkPropTypes = __webpack_require__(7);
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -2816,7 +2813,7 @@ if (process.env.NODE_ENV === 'production') {
  LICENSE file in the root directory of this source tree.
  Modernizr 3.0.0pre (Custom Build) | MIT
 */
-var aa=__webpack_require__(3);__webpack_require__(2);var l=__webpack_require__(10),n=__webpack_require__(4),ba=__webpack_require__(11),ca=__webpack_require__(1),da=__webpack_require__(5),ea=__webpack_require__(12),fa=__webpack_require__(13),ha=__webpack_require__(14),ia=__webpack_require__(15);
+var aa=__webpack_require__(4);__webpack_require__(2);var l=__webpack_require__(9),n=__webpack_require__(3),ba=__webpack_require__(10),ca=__webpack_require__(1),da=__webpack_require__(5),ea=__webpack_require__(11),fa=__webpack_require__(12),ha=__webpack_require__(13),ia=__webpack_require__(14);
 function w(a){for(var b=arguments.length-1,c="Minified React error #"+a+"; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d"+a,d=0;d<b;d++)c+="\x26args[]\x3d"+encodeURIComponent(arguments[d+1]);b=Error(c+" for the full message or use the non-minified dev environment for full errors and additional helpful warnings.");b.name="Invariant Violation";b.framesToPop=1;throw b;}aa?void 0:w("227");
 function ja(a){switch(a){case "svg":return"http://www.w3.org/2000/svg";case "math":return"http://www.w3.org/1998/Math/MathML";default:return"http://www.w3.org/1999/xhtml"}}
 var ka={Namespaces:{html:"http://www.w3.org/1999/xhtml",mathml:"http://www.w3.org/1998/Math/MathML",svg:"http://www.w3.org/2000/svg"},getIntrinsicNamespace:ja,getChildNamespace:function(a,b){return null==a||"http://www.w3.org/1999/xhtml"===a?ja(b):"http://www.w3.org/2000/svg"===a&&"foreignObject"===b?"http://www.w3.org/1999/xhtml":a}},la=null,oa={};
@@ -3141,23 +3138,23 @@ if (process.env.NODE_ENV !== "production") {
 
 'use strict';
 
-var react = __webpack_require__(3);
+var react = __webpack_require__(4);
 var invariant = __webpack_require__(2);
-var ExecutionEnvironment = __webpack_require__(10);
-var _assign = __webpack_require__(4);
-var EventListener = __webpack_require__(11);
+var ExecutionEnvironment = __webpack_require__(9);
+var _assign = __webpack_require__(3);
+var EventListener = __webpack_require__(10);
 var require$$0 = __webpack_require__(6);
 var hyphenateStyleName = __webpack_require__(24);
 var emptyFunction = __webpack_require__(1);
 var camelizeStyleName = __webpack_require__(26);
 var performanceNow = __webpack_require__(28);
-var propTypes = __webpack_require__(7);
+var propTypes = __webpack_require__(15);
 var emptyObject = __webpack_require__(5);
-var checkPropTypes = __webpack_require__(8);
-var shallowEqual = __webpack_require__(12);
-var containsNode = __webpack_require__(13);
-var focusNode = __webpack_require__(14);
-var getActiveElement = __webpack_require__(15);
+var checkPropTypes = __webpack_require__(7);
+var shallowEqual = __webpack_require__(11);
+var containsNode = __webpack_require__(12);
+var focusNode = __webpack_require__(13);
+var getActiveElement = __webpack_require__(14);
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -20558,7 +20555,7 @@ module.exports = performanceNow;
 
 
 
-var ExecutionEnvironment = __webpack_require__(10);
+var ExecutionEnvironment = __webpack_require__(9);
 
 var performance;
 
@@ -20585,10 +20582,10 @@ module.exports = performance || {};
 var emptyFunction = __webpack_require__(1);
 var invariant = __webpack_require__(2);
 var warning = __webpack_require__(6);
-var assign = __webpack_require__(4);
+var assign = __webpack_require__(3);
 
-var ReactPropTypesSecret = __webpack_require__(9);
-var checkPropTypes = __webpack_require__(8);
+var ReactPropTypesSecret = __webpack_require__(8);
+var checkPropTypes = __webpack_require__(7);
 
 module.exports = function(isValidElement, throwOnDirectAccess) {
   /* global Symbol */
@@ -21134,7 +21131,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
 var emptyFunction = __webpack_require__(1);
 var invariant = __webpack_require__(2);
-var ReactPropTypesSecret = __webpack_require__(9);
+var ReactPropTypesSecret = __webpack_require__(8);
 
 module.exports = function() {
   function shim(props, propName, componentName, location, propFullName, secret) {
@@ -21196,23 +21193,15 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(3);
+var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(7);
+var _propTypes = __webpack_require__(15);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
 __webpack_require__(33);
-
-var _ShopItem = __webpack_require__(34);
-
-var _ShopItem2 = _interopRequireDefault(_ShopItem);
-
-var _ItemCard = __webpack_require__(36);
-
-var _ItemCard2 = _interopRequireDefault(_ItemCard);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -21222,485 +21211,51 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var ShopTable = function (_React$Component) {
-    _inherits(ShopTable, _React$Component);
+var n = 0;
 
-    function ShopTable() {
-        var _ref;
+var RainbowFrame = function (_React$Component) {
+    _inherits(RainbowFrame, _React$Component);
 
-        var _temp, _this, _ret;
+    function RainbowFrame() {
+        _classCallCheck(this, RainbowFrame);
 
-        _classCallCheck(this, ShopTable);
-
-        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-            args[_key] = arguments[_key];
-        }
-
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ShopTable.__proto__ || Object.getPrototypeOf(ShopTable)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-            selectedItem: null,
-            infoMode: 0, //0 - элемент для редактирования не выбран, 1 - редактировать, 2 - новый
-            catalogList: _this.props.catalog,
-            changesSaved: true, //сохранены ли изменения после редактирования инпутов
-            lastCode: _this.props.catalog[_this.props.catalog.length - 1].code.slice(3) //последний код товара
-        }, _this.itemSelected = function (codeItem) {
-            _this.setState({ selectedItem: codeItem, infoMode: 0 });
-        }, _this.itemDelete = function (codeItem, nameItem) {
-            if (confirm('\u0423\u0434\u0430\u043B\u0438\u0442\u044C \u0442\u043E\u0432\u0430\u0440 "' + nameItem + '" (\u043A\u043E\u0434 \u0442\u043E\u0432\u0430\u0440\u0430 "' + codeItem + '")?')) {
-                _this.setState({ catalogList: _this.state.catalogList.filter(function (v) {
-                        return v.code != codeItem;
-                    }),
-                    selectedItem: _this.state.selectedItem == codeItem ? null : _this.state.selectedItem
-                });
-            };
-        }, _this.itemEdit = function (codeItem) {
-            //редактировать элемент
-            _this.setState({ selectedItem: codeItem, infoMode: 1 });
-        }, _this.itemChanges = function (savedItem) {
-            //проверить сохранены ли изменения или добавление 
-            _this.setState({ changesSaved: savedItem });
-        }, _this.itemSaveChanges = function (changeItemObj) {
-            //сохранить изменения после редактирования
-            _this.setState({ catalogList: _this.state.catalogList.map(function (v) {
-                    return v.code == changeItemObj.code ? changeItemObj : v;
-                }) });
-        }, _this.itemCancel = function (mode) {
-            //кнопка отмены
-            _this.setState({ infoMode: mode, selectedItem: null });
-        }, _this.addItem = function (EO) {
-            //добавить новый элемент
-            _this.setState({ infoMode: 2 });
-            _this.itemChanges(false); //клики по строкам товаров не должны ничего делать
-        }, _this.saveAddedItem = function (addedItemObj, code) {
-            //сохранить добавленный элемент
-            _this.state.catalogList.push(addedItemObj);
-            _this.setState({ lastCode: code });
-        }, _temp), _possibleConstructorReturn(_this, _ret);
+        return _possibleConstructorReturn(this, (RainbowFrame.__proto__ || Object.getPrototypeOf(RainbowFrame)).apply(this, arguments));
     }
 
-    _createClass(ShopTable, [{
+    _createClass(RainbowFrame, [{
         key: 'render',
         value: function render() {
-            var _this2 = this;
 
-            var tableHeader = ["Name", "Price", "URL", "Quantity", "Control"];
-
-            var catalogCodeTable = this.state.catalogList.map(function (v) {
-                return _react2.default.createElement(_ShopItem2.default, { name: v.name, price: v.price, image: v.image, count: v.count, code: v.code, key: v.code,
-                    cbSelected: _this2.itemSelected, selectedItem: _this2.state.selectedItem, cbDelete: _this2.itemDelete, cbEdit: _this2.itemEdit, canSelectItem: _this2.state.changesSaved, infoMode: _this2.state.infoMode
-                });
-            });
-
-            return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(
-                    'h1',
-                    { className: 'shopName' },
-                    this.props.shopName
-                ),
-                _react2.default.createElement(
-                    'table',
-                    { className: 'shopTable' },
+            if (n < this.props.colors.length) {
+                return _react2.default.createElement(
+                    RainbowFrame,
+                    { colors: this.props.colors },
                     _react2.default.createElement(
-                        'thead',
-                        null,
-                        _react2.default.createElement(
-                            'tr',
-                            null,
-                            tableHeader.map(function (v, i) {
-                                return _react2.default.createElement(
-                                    'th',
-                                    { key: i },
-                                    v
-                                );
-                            })
-                        )
-                    ),
-                    _react2.default.createElement(
-                        'tbody',
-                        null,
-                        catalogCodeTable
+                        'div',
+                        { style: { borderColor: this.props.colors[n++] } },
+                        this.props.children
                     )
-                ),
-                _react2.default.createElement('input', { type: 'button', value: 'New product', onClick: this.addItem, disabled: this.state.infoMode != 0 }),
-                (this.state.selectedItem || this.state.infoMode == 2) && _react2.default.createElement(_ItemCard2.default, { item: this.state.catalogList.filter(function (v) {
-                        return v.code == _this2.state.selectedItem;
-                    })[0], mode: this.state.infoMode, lastCode: this.state.lastCode,
-                    cbCanSave: this.itemChanges, cbSave: this.itemSaveChanges, cbCancel: this.itemCancel, cbSaveAddedItem: this.saveAddedItem })
-            );
+                );
+            } else {
+                return this.props.children;
+            }
         }
     }]);
 
-    return ShopTable;
+    return RainbowFrame;
 }(_react2.default.Component);
 
-ShopTable.propTypes = {
-    catalog: _propTypes2.default.arrayOf(_propTypes2.default.shape({
-        code: _propTypes2.default.string.isRequired,
-        image: _propTypes2.default.string.isRequired,
-        name: _propTypes2.default.string.isRequired,
-        price: _propTypes2.default.number.isRequired,
-        count: _propTypes2.default.number.isRequired
-    }))
+RainbowFrame.PropTypes = {
+    colors: _propTypes2.default.arrayOf(_propTypes2.default.string.isRequired),
+    children: _propTypes2.default.string
 };
-exports.default = ShopTable;
+exports.default = RainbowFrame;
 
 /***/ }),
 /* 33 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 34 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(3);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(7);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-__webpack_require__(35);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ShopItem = function (_React$Component) {
-    _inherits(ShopItem, _React$Component);
-
-    function ShopItem() {
-        var _ref;
-
-        var _temp, _this, _ret;
-
-        _classCallCheck(this, ShopItem);
-
-        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-            args[_key] = arguments[_key];
-        }
-
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ShopItem.__proto__ || Object.getPrototypeOf(ShopItem)).call.apply(_ref, [this].concat(args))), _this), _this.itemClicked = function (EO) {
-            if (EO.target.tagName != "INPUT") {
-                _this.props.cbSelected(_this.props.code);
-            }
-        }, _this.itemDeleted = function (EO) {
-            _this.props.cbDelete(_this.props.code, _this.props.name);
-        }, _this.itemEdited = function (EO) {
-            _this.props.cbEdit(_this.props.code);
-        }, _temp), _possibleConstructorReturn(_this, _ret);
-    }
-
-    _createClass(ShopItem, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'tr',
-                { className: this.props.code == this.props.selectedItem && this.props.infoMode == 0 ? "active" : null, onClick: this.props.canSelectItem ? this.itemClicked : null },
-                _react2.default.createElement(
-                    'td',
-                    null,
-                    this.props.name
-                ),
-                _react2.default.createElement(
-                    'td',
-                    null,
-                    this.props.price
-                ),
-                _react2.default.createElement(
-                    'td',
-                    null,
-                    this.props.image
-                ),
-                _react2.default.createElement(
-                    'td',
-                    null,
-                    this.props.count
-                ),
-                _react2.default.createElement(
-                    'td',
-                    null,
-                    _react2.default.createElement('input', { type: 'button', value: 'Edit', onClick: this.itemEdited, disabled: this.props.infoMode == 2 || !this.props.canSelectItem }),
-                    _react2.default.createElement('input', { type: 'button', value: 'Delete', onClick: this.itemDeleted, disabled: this.props.infoMode != 0 })
-                )
-            );
-        }
-    }]);
-
-    return ShopItem;
-}(_react2.default.Component);
-
-ShopItem.PropTypes = {
-    code: _propTypes2.default.string.isRequired,
-    image: _propTypes2.default.string.isRequired,
-    name: _propTypes2.default.string.isRequired,
-    price: _propTypes2.default.number.isRequired,
-    count: _propTypes2.default.number.isRequired,
-    cbSelected: _propTypes2.default.func.isRequired,
-    selectedItem: _propTypes2.default.string,
-    cbDelete: _propTypes2.default.func.isRequired,
-    cbEdit: _propTypes2.default.func.isRequired,
-    canSelectItem: _propTypes2.default.bool.isRequired,
-    infoMode: _propTypes2.default.number.isRequired
-};
-exports.default = ShopItem;
-
-/***/ }),
-/* 35 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 36 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(3);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _propTypes = __webpack_require__(7);
-
-var _propTypes2 = _interopRequireDefault(_propTypes);
-
-__webpack_require__(37);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ItemCard = function (_React$Component) {
-    _inherits(ItemCard, _React$Component);
-
-    function ItemCard() {
-        var _ref;
-
-        var _temp, _this, _ret;
-
-        _classCallCheck(this, ItemCard);
-
-        for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-            args[_key] = arguments[_key];
-        }
-
-        return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = ItemCard.__proto__ || Object.getPrototypeOf(ItemCard)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
-            itemName: _this.props.mode == 2 ? "" : _this.props.item.name,
-            itemPrice: _this.props.mode == 2 ? "" : _this.props.item.price,
-            itemCount: _this.props.mode == 2 ? "" : _this.props.item.count,
-            itemImg: _this.props.mode == 2 ? "" : _this.props.item.image
-        }, _this.validItemName = function (EO) {
-            _this.setState({ itemName: EO.target.value.trim() });
-            _this.changeInputValue(false);
-        }, _this.validItemPrice = function (EO) {
-            _this.setState({ itemPrice: EO.target.value > 0 && EO.target.value });
-            _this.changeInputValue(false);
-        }, _this.validItemCount = function (EO) {
-            _this.setState({ itemCount: +EO.target.value >= 0 && Number.isInteger(+EO.target.value) && EO.target.value });
-            _this.changeInputValue(false);
-        }, _this.validItemImg = function (EO) {
-            var regExp = /([\/\w\.-]*)*\.([a-z\.]{3,4})/;
-            _this.setState({ itemImg: regExp.test(EO.target.value) && EO.target.value });
-            _this.changeInputValue(false);
-        }, _this.changeInputValue = function (changeValue) {
-            //есть ли несохранённые изменения
-            _this.props.cbCanSave(changeValue);
-        }, _this.saveChanges = function (EO) {
-            if (_this.props.mode == 2) {
-                _this.props.cbSaveAddedItem({
-                    code: "tea" + (+_this.props.lastCode + 1),
-                    image: _this.state.itemImg,
-                    name: _this.state.itemName,
-                    price: +_this.state.itemPrice,
-                    count: +_this.state.itemCount
-                }, +_this.props.lastCode + 1);
-            } else {
-                _this.props.cbSave({
-                    code: _this.props.item.code,
-                    image: _this.state.itemImg,
-                    name: _this.state.itemName,
-                    price: +_this.state.itemPrice,
-                    count: +_this.state.itemCount
-                });
-            }
-            _this.cancelChanges();
-        }, _this.cancelChanges = function (EO) {
-            _this.changeInputValue(true);
-            _this.props.cbCancel(0);
-        }, _temp), _possibleConstructorReturn(_this, _ret);
-    }
-
-    _createClass(ItemCard, [{
-        key: 'componentDidUpdate',
-        value: function componentDidUpdate(prevProps, prevState, snapshot) {
-            if (this.props.mode != 2 && this.props.item.code != prevProps.item.code) {
-                this.setState({
-                    itemName: this.props.item.name,
-                    itemPrice: this.props.item.price,
-                    itemCount: this.props.item.count,
-                    itemImg: this.props.item.image
-                });
-            }
-        }
-    }, {
-        key: 'render',
-        value: function render() {
-            switch (this.props.mode) {
-                case 0:
-                    return _react2.default.createElement(
-                        'div',
-                        { className: 'card' },
-                        _react2.default.createElement(
-                            'h2',
-                            null,
-                            "Название: " + this.props.item.name
-                        ),
-                        _react2.default.createElement(
-                            'h3',
-                            null,
-                            "Цена: " + this.props.item.price + " BYN/100гр"
-                        ),
-                        _react2.default.createElement(
-                            'p',
-                            null,
-                            "Остаток на складе: " + this.props.item.count + " шт/100гр"
-                        ),
-                        _react2.default.createElement(
-                            'p',
-                            null,
-                            "URL: " + this.props.item.image
-                        )
-                    );
-                case 1:
-                case 2:
-                    return _react2.default.createElement(
-                        'div',
-                        { className: 'card' },
-                        _react2.default.createElement(
-                            'h2',
-                            null,
-                            this.props.mode == 1 ? "Edit existing Product" : "Add new product"
-                        ),
-                        _react2.default.createElement(
-                            'h3',
-                            null,
-                            "Код товара: " + (this.props.mode == 1 ? this.props.item.code : "tea" + (+this.props.lastCode + 1))
-                        ),
-                        _react2.default.createElement(
-                            'label',
-                            null,
-                            '\u041D\u0430\u0437\u0432\u0430\u043D\u0438\u0435:',
-                            _react2.default.createElement('input', { type: 'text', name: 'itemName', value: this.state.itemName, onChange: this.validItemName })
-                        ),
-                        !this.state.itemName && _react2.default.createElement(
-                            'span',
-                            null,
-                            'Please, fill the field. Value mast be a string'
-                        ),
-                        _react2.default.createElement('br', null),
-                        _react2.default.createElement(
-                            'label',
-                            null,
-                            '\u0426\u0435\u043D\u0430 (BYN/100\u0433\u0440):',
-                            _react2.default.createElement('input', { type: 'number', name: 'itemPrice', value: +this.state.itemPrice, onChange: this.validItemPrice })
-                        ),
-                        !this.state.itemPrice && _react2.default.createElement(
-                            'span',
-                            null,
-                            'Please, fill the field. Value mast be a rational number greater than 0'
-                        ),
-                        _react2.default.createElement('br', null),
-                        _react2.default.createElement(
-                            'label',
-                            null,
-                            '\u041E\u0441\u0442\u0430\u0442\u043E\u043A (\u0448\u0442/100\u0433\u0440):',
-                            _react2.default.createElement('input', { type: 'number', name: 'itemCount', value: +this.state.itemCount, onChange: this.validItemCount })
-                        ),
-                        !this.state.itemCount && _react2.default.createElement(
-                            'span',
-                            null,
-                            'Please, fill the field. Value mast be a positive integer'
-                        ),
-                        _react2.default.createElement('br', null),
-                        _react2.default.createElement(
-                            'label',
-                            null,
-                            'URL:',
-                            _react2.default.createElement('input', { type: 'text', name: 'itemImg', value: this.state.itemImg, onChange: this.validItemImg })
-                        ),
-                        !this.state.itemImg && _react2.default.createElement(
-                            'span',
-                            null,
-                            'Please, fill the field. Value mast be a valid URL'
-                        ),
-                        _react2.default.createElement('br', null),
-                        _react2.default.createElement('input', { type: 'button', value: this.props.mode == 1 ? "Save" : "Add",
-                            onClick: this.saveChanges,
-                            disabled: !(this.state.itemCount && this.state.itemName && this.state.itemPrice && this.state.itemImg) }),
-                        _react2.default.createElement('input', { type: 'button', value: 'Cancel', onClick: this.cancelChanges })
-                    );
-            }
-        }
-    }]);
-
-    return ItemCard;
-}(_react2.default.Component);
-
-ItemCard.propTypes = {
-    item: _propTypes2.default.shape({
-        code: _propTypes2.default.string,
-        image: _propTypes2.default.string,
-        name: _propTypes2.default.string,
-        price: _propTypes2.default.number,
-        count: _propTypes2.default.number
-    }),
-    mode: _propTypes2.default.number.isRequired,
-    cbCanSave: _propTypes2.default.func.isRequired,
-    cbSave: _propTypes2.default.func.isRequired,
-    cbCancel: _propTypes2.default.func.isRequired,
-    cbSaveAddedItem: _propTypes2.default.func.isRequired
-};
-exports.default = ItemCard;
-
-/***/ }),
-/* 37 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 38 */
-/***/ (function(module, exports) {
-
-module.exports = [{"code":"tea2","image":"img/tea2.png","name":"Юньнань Юнь","price":20,"count":12},{"code":"tea3","image":"img/tea3.png","name":"Бай Му Дань","price":18,"count":15},{"code":"tea4","image":"img/tea4.png","name":"Лушань Юнь","price":23,"count":23},{"code":"tea1","image":"img/tea1.png","name":"Шоу Мэй","price":15,"count":16},{"code":"tea6","image":"img/tea6.png","name":"Хей ча","price":19,"count":38},{"code":"tea5","image":"img/tea5.png","name":"Хун ча","price":21,"count":48},{"code":"tea7","image":"img/tea7.png","name":"Люй ча","price":25,"count":2},{"code":"tea8","image":"img/tea8.png","name":"Бай ча","price":30,"count":15},{"code":"tea9","image":"img/tea9.jpg","name":"Хуан ча","price":24,"count":19}]
 
 /***/ })
 /******/ ]);

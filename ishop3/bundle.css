@@ -10,13 +10,51 @@
 .shopTable th {
     border: 1px solid black;
     text-align: center;
-    padding: 5px;
+    padding: 3px;
 }
 .shopTable td:first-child {
     text-align: left;
 }
+[type="button"] {
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.shopTable [type="button"]{
+    display: inline-block;
+}
 .active {
     background-color: coral;
 }
-
+.card {
+    margin: 5px;
+    padding-left: 20px;
+    
+}
+.card>h2, .card>h3 {
+    color: #3F3F3F;
+}
+.card>p {
+    color: #A5A5A5;
+}
+.card>label {
+    display: block;
+    margin: 5px;
+}
+.card>label {
+    display: inline-block;
+    margin: 5px;
+    width: 350px;
+}
+.card>label>input {
+    float: right;
+}
+.card [type="button"] {
+    display: inline;
+    margin-left: 5px;
+}
+.card span {
+    color: red;
+}
 /*# sourceMappingURL=bundle.css.map*/
