@@ -21211,8 +21211,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var n = 0;
-
 var RainbowFrame = function (_React$Component) {
     _inherits(RainbowFrame, _React$Component);
 
@@ -21225,14 +21223,13 @@ var RainbowFrame = function (_React$Component) {
     _createClass(RainbowFrame, [{
         key: 'render',
         value: function render() {
-
-            if (n < this.props.colors.length) {
+            if (this.props.colors.length > 0) {
                 return _react2.default.createElement(
-                    RainbowFrame,
-                    { colors: this.props.colors },
+                    'div',
+                    { style: { borderColor: this.props.colors[0] } },
                     _react2.default.createElement(
-                        'div',
-                        { style: { borderColor: this.props.colors[n++] } },
+                        RainbowFrame,
+                        { colors: this.props.colors.slice(1) },
                         this.props.children
                     )
                 );
@@ -21240,6 +21237,18 @@ var RainbowFrame = function (_React$Component) {
                 return this.props.children;
             }
         }
+
+        // render () {
+
+        //     let code = this.props.children;
+
+        //     this.props.colors.forEach((v) => {
+        //         code = <div style = {{borderColor: v}}>{code}</div>
+        //     });
+
+        //     return code
+        // }
+
     }]);
 
     return RainbowFrame;
