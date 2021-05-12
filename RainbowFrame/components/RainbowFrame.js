@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 
 import './RainbowFrame.css';
 
-let n=0;
-
 class RainbowFrame extends React.Component {
 
     static PropTypes = {
@@ -13,16 +11,30 @@ class RainbowFrame extends React.Component {
     }
 
     render () {
-        
-        if (n<this.props.colors.length) {
-            return <RainbowFrame colors={this.props.colors}>
-                <div style = {{borderColor : this.props.colors[n++]}}>{this.props.children}</div>
-            </RainbowFrame>
+        if (this.props.colors.length>0) {
+            return (
+                <div style = {{borderColor: this.props.colors[0]}}>
+                    <RainbowFrame colors={this.props.colors.slice(1)}>
+                        {this.props.children}
+                    </RainbowFrame>
+                </div>
+            )
         }
         else {
             return this.props.children
         }
     }
+
+    // render () {
+
+    //     let code = this.props.children;
+
+    //     this.props.colors.forEach((v) => {
+    //         code = <div style = {{borderColor: v}}>{code}</div>
+    //     });
+
+    //     return code
+    // }
 }
 
 export default RainbowFrame;
