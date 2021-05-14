@@ -1,0 +1,11 @@
+.doubleButton , .doubleButton input {
+    padding: 17px;
+    font-size: 25px;
+}
+
+.doubleButton input {
+    padding: 5px;
+    border-radius: 5px ;
+    text-align: center;
+    font-size: 18px;
+}
