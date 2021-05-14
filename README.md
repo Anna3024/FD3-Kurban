@@ -10,3 +10,5 @@ https://anna3024.github.io/FD3-Kurban/ishop3/ - task4 "IShop3"
 https://anna3024.github.io/FD3-Kurban/RainbowFrame/ - task5 "RainbowFrame"
 
 https://anna3024.github.io/FD3-Kurban/br2jsx/ - task6 "br2jsx"
+
+https://anna3024.github.io/FD3-Kurban/RainbowFrameHOC/ - task7 "RainbowFrameHOC"
