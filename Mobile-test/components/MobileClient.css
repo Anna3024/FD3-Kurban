@@ -1,0 +1,31 @@
+﻿* {
+  box-sizing: border-box;
+}
+.MobileClient td 
+{
+  padding: 3px;
+  padding-bottom: 10px;
+}
+
+.MobileClient td [type="text"]
+{
+ width: 164px;
+ margin-left: 0;
+ margin-right: 0;
+ padding: -5px;
+}
+
+.MobileClient td [type="number"]
+{
+ width: 94px;
+ margin-left: 0;
+ margin-right: 0;
+}
+
+.active {
+  background-color: #28a745;
+}
+
+.blocked {
+  background-color: #dc3545;
+}

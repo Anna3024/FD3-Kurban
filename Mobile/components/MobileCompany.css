@@ -1,0 +1,46 @@
+﻿.MobileCompany input 
+{
+  margin: 5px;
+}
+
+.MobileCompany .activeBtn 
+{
+  background-color: #28a745;
+}
+
+.MobileCompanyName
+{
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.MobileControls, 
+.MobileCompanyName,
+.MobileCompany tr
+{
+  margin-left: 5px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.MobileCompany table
+{
+  width: 99%;
+  text-align: left;
+  margin: 5px;
+  border-collapse: collapse;
+}
+
+.MobileCompany thead
+{
+  border-bottom: 2px solid #dee2e6;
+}
+
+.MobileCompany th
+{
+  padding: 5px;
+  padding-bottom: 10px;
+}
+
+
+
