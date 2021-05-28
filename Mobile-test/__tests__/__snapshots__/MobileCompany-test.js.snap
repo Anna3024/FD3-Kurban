@@ -1,0 +1,1383 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`работа MobileCompany 1`] = `
+<div
+  className="MobileCompany"
+>
+  <div
+    className="MobileCompanyName"
+  >
+    Компания: «
+    Velcom
+    »
+  </div>
+  <div
+    className="MobileControls"
+  >
+    <input
+      className="activeBtn"
+      onClick={[Function]}
+      type="button"
+      value="Все"
+    />
+    <input
+      className={null}
+      onClick={[Function]}
+      type="button"
+      value="Активные"
+    />
+    <input
+      className={null}
+      onClick={[Function]}
+      type="button"
+      value="Заблокированные"
+    />
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Фамилия
+        </th>
+        <th>
+          Имя
+        </th>
+        <th>
+          Отчество
+        </th>
+        <th>
+          Баланс
+        </th>
+        <th>
+          Статус
+        </th>
+        <th>
+          Редактировать
+        </th>
+        <th>
+          Удалить
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="MobileClient"
+      >
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Иванов
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Иван
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Иванович
+        </td>
+        <td
+          style={
+            Object {
+              "width": "100px",
+            }
+          }
+        >
+          200
+        </td>
+        <td
+          className="active"
+        >
+          active
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Редактировать"
+          />
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Удалить"
+          />
+        </td>
+      </tr>
+      <tr
+        className="MobileClient"
+      >
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Сидоров
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Сидор
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Сидорович
+        </td>
+        <td
+          style={
+            Object {
+              "width": "100px",
+            }
+          }
+        >
+          250
+        </td>
+        <td
+          className="active"
+        >
+          active
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Редактировать"
+          />
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Удалить"
+          />
+        </td>
+      </tr>
+      <tr
+        className="MobileClient"
+      >
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Петров
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Петр
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Петрович
+        </td>
+        <td
+          style={
+            Object {
+              "width": "100px",
+            }
+          }
+        >
+          180
+        </td>
+        <td
+          className="active"
+        >
+          active
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Редактировать"
+          />
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Удалить"
+          />
+        </td>
+      </tr>
+      <tr
+        className="MobileClient"
+      >
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Григорьев
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Григорий
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Григорьевич
+        </td>
+        <td
+          style={
+            Object {
+              "width": "100px",
+            }
+          }
+        >
+          -220
+        </td>
+        <td
+          className="blocked"
+        >
+          block
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Редактировать"
+          />
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Удалить"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <input
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+    value="Добавить клиента"
+  />
+</div>
+`;
+
+exports[`работа MobileCompany 2`] = `
+<div
+  className="MobileCompany"
+>
+  <div
+    className="MobileCompanyName"
+  >
+    Компания: «
+    Velcom
+    »
+  </div>
+  <div
+    className="MobileControls"
+  >
+    <input
+      className="activeBtn"
+      onClick={[Function]}
+      type="button"
+      value="Все"
+    />
+    <input
+      className={null}
+      onClick={[Function]}
+      type="button"
+      value="Активные"
+    />
+    <input
+      className={null}
+      onClick={[Function]}
+      type="button"
+      value="Заблокированные"
+    />
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Фамилия
+        </th>
+        <th>
+          Имя
+        </th>
+        <th>
+          Отчество
+        </th>
+        <th>
+          Баланс
+        </th>
+        <th>
+          Статус
+        </th>
+        <th>
+          Редактировать
+        </th>
+        <th>
+          Удалить
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="MobileClient"
+      >
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Иванов
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Иван
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Иванович
+        </td>
+        <td
+          style={
+            Object {
+              "width": "100px",
+            }
+          }
+        >
+          200
+        </td>
+        <td
+          className="active"
+        >
+          active
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Редактировать"
+          />
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Удалить"
+          />
+        </td>
+      </tr>
+      <tr
+        className="MobileClient"
+      >
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Сидоров
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Сидор
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Сидорович
+        </td>
+        <td
+          style={
+            Object {
+              "width": "100px",
+            }
+          }
+        >
+          250
+        </td>
+        <td
+          className="active"
+        >
+          active
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Редактировать"
+          />
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Удалить"
+          />
+        </td>
+      </tr>
+      <tr
+        className="MobileClient"
+      >
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Петров
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Петр
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Петрович
+        </td>
+        <td
+          style={
+            Object {
+              "width": "100px",
+            }
+          }
+        >
+          180
+        </td>
+        <td
+          className="active"
+        >
+          active
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Редактировать"
+          />
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Удалить"
+          />
+        </td>
+      </tr>
+      <tr
+        className="MobileClient"
+      >
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Григорьев
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Григорий
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Григорьевич
+        </td>
+        <td
+          style={
+            Object {
+              "width": "100px",
+            }
+          }
+        >
+          -220
+        </td>
+        <td
+          className="blocked"
+        >
+          block
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Редактировать"
+          />
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Удалить"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <input
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+    value="Добавить клиента"
+  />
+</div>
+`;
+
+exports[`работа MobileCompany 3`] = `
+<div
+  className="MobileCompany"
+>
+  <div
+    className="MobileCompanyName"
+  >
+    Компания: «
+    Velcom
+    »
+  </div>
+  <div
+    className="MobileControls"
+  >
+    <input
+      className={null}
+      onClick={[Function]}
+      type="button"
+      value="Все"
+    />
+    <input
+      className="activeBtn"
+      onClick={[Function]}
+      type="button"
+      value="Активные"
+    />
+    <input
+      className={null}
+      onClick={[Function]}
+      type="button"
+      value="Заблокированные"
+    />
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Фамилия
+        </th>
+        <th>
+          Имя
+        </th>
+        <th>
+          Отчество
+        </th>
+        <th>
+          Баланс
+        </th>
+        <th>
+          Статус
+        </th>
+        <th>
+          Редактировать
+        </th>
+        <th>
+          Удалить
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="MobileClient"
+      >
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Иванов
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Иван
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Иванович
+        </td>
+        <td
+          style={
+            Object {
+              "width": "100px",
+            }
+          }
+        >
+          200
+        </td>
+        <td
+          className="active"
+        >
+          active
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Редактировать"
+          />
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Удалить"
+          />
+        </td>
+      </tr>
+      <tr
+        className="MobileClient"
+      >
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Сидоров
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Сидор
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Сидорович
+        </td>
+        <td
+          style={
+            Object {
+              "width": "100px",
+            }
+          }
+        >
+          250
+        </td>
+        <td
+          className="active"
+        >
+          active
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Редактировать"
+          />
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Удалить"
+          />
+        </td>
+      </tr>
+      <tr
+        className="MobileClient"
+      >
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Петров
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Петр
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Петрович
+        </td>
+        <td
+          style={
+            Object {
+              "width": "100px",
+            }
+          }
+        >
+          180
+        </td>
+        <td
+          className="active"
+        >
+          active
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Редактировать"
+          />
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Удалить"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <input
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+    value="Добавить клиента"
+  />
+</div>
+`;
+
+exports[`работа MobileCompany 4`] = `
+<div
+  className="MobileCompany"
+>
+  <div
+    className="MobileCompanyName"
+  >
+    Компания: «
+    Velcom
+    »
+  </div>
+  <div
+    className="MobileControls"
+  >
+    <input
+      className={null}
+      onClick={[Function]}
+      type="button"
+      value="Все"
+    />
+    <input
+      className={null}
+      onClick={[Function]}
+      type="button"
+      value="Активные"
+    />
+    <input
+      className="activeBtn"
+      onClick={[Function]}
+      type="button"
+      value="Заблокированные"
+    />
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Фамилия
+        </th>
+        <th>
+          Имя
+        </th>
+        <th>
+          Отчество
+        </th>
+        <th>
+          Баланс
+        </th>
+        <th>
+          Статус
+        </th>
+        <th>
+          Редактировать
+        </th>
+        <th>
+          Удалить
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="MobileClient"
+      >
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Григорьев
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Григорий
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Григорьевич
+        </td>
+        <td
+          style={
+            Object {
+              "width": "100px",
+            }
+          }
+        >
+          -220
+        </td>
+        <td
+          className="blocked"
+        >
+          block
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Редактировать"
+          />
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Удалить"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <input
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+    value="Добавить клиента"
+  />
+</div>
+`;
+
+exports[`работа MobileCompany 5`] = `
+<div
+  className="MobileCompany"
+>
+  <div
+    className="MobileCompanyName"
+  >
+    Компания: «
+    Velcom
+    »
+  </div>
+  <div
+    className="MobileControls"
+  >
+    <input
+      className={null}
+      onClick={[Function]}
+      type="button"
+      value="Все"
+    />
+    <input
+      className={null}
+      onClick={[Function]}
+      type="button"
+      value="Активные"
+    />
+    <input
+      className="activeBtn"
+      onClick={[Function]}
+      type="button"
+      value="Заблокированные"
+    />
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Фамилия
+        </th>
+        <th>
+          Имя
+        </th>
+        <th>
+          Отчество
+        </th>
+        <th>
+          Баланс
+        </th>
+        <th>
+          Статус
+        </th>
+        <th>
+          Редактировать
+        </th>
+        <th>
+          Удалить
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="MobileClient"
+      >
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Григорьев
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Григорий
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Григорьевич
+        </td>
+        <td
+          style={
+            Object {
+              "width": "100px",
+            }
+          }
+        >
+          -220
+        </td>
+        <td
+          className="blocked"
+        >
+          block
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Редактировать"
+          />
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Удалить"
+          />
+        </td>
+      </tr>
+      <tr
+        className="MobileClient"
+      >
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          <input
+            type="text"
+          />
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          <input
+            type="text"
+          />
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          <input
+            type="text"
+          />
+           
+        </td>
+        <td
+          style={
+            Object {
+              "width": "100px",
+            }
+          }
+        >
+          <input
+            type="number"
+          />
+           
+        </td>
+        <td />
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Сохранить"
+          />
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Отменить"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <input
+    disabled={true}
+    onClick={[Function]}
+    type="button"
+    value="Добавить клиента"
+  />
+</div>
+`;
+
+exports[`работа MobileCompany 6`] = `
+<div
+  className="MobileCompany"
+>
+  <div
+    className="MobileCompanyName"
+  >
+    Компания: «
+    Velcom
+    »
+  </div>
+  <div
+    className="MobileControls"
+  >
+    <input
+      className={null}
+      onClick={[Function]}
+      type="button"
+      value="Все"
+    />
+    <input
+      className={null}
+      onClick={[Function]}
+      type="button"
+      value="Активные"
+    />
+    <input
+      className="activeBtn"
+      onClick={[Function]}
+      type="button"
+      value="Заблокированные"
+    />
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Фамилия
+        </th>
+        <th>
+          Имя
+        </th>
+        <th>
+          Отчество
+        </th>
+        <th>
+          Баланс
+        </th>
+        <th>
+          Статус
+        </th>
+        <th>
+          Редактировать
+        </th>
+        <th>
+          Удалить
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="MobileClient"
+      >
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Григорьев
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Григорий
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          Григорьевич
+        </td>
+        <td
+          style={
+            Object {
+              "width": "100px",
+            }
+          }
+        >
+          -220
+        </td>
+        <td
+          className="blocked"
+        >
+          block
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Редактировать"
+          />
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Удалить"
+          />
+        </td>
+      </tr>
+      <tr
+        className="MobileClient"
+      >
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          <input
+            type="text"
+          />
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          <input
+            type="text"
+          />
+        </td>
+        <td
+          style={
+            Object {
+              "width": "170px",
+            }
+          }
+        >
+          <input
+            type="text"
+          />
+           
+        </td>
+        <td
+          style={
+            Object {
+              "width": "100px",
+            }
+          }
+        >
+          <input
+            type="number"
+          />
+           
+        </td>
+        <td />
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Сохранить"
+          />
+        </td>
+        <td>
+          <input
+            onClick={[Function]}
+            type="button"
+            value="Отменить"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <input
+    disabled={true}
+    onClick={[Function]}
+    type="button"
+    value="Добавить клиента"
+  />
+</div>
+`;

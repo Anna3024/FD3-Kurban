@@ -42,6 +42,18 @@ class MobileCompany extends React.PureComponent {
     this.setState({showClientsState: num})
   }
 
+  getCurrentClientsArr = () => {
+    if (this.state.showClientsState==2) {
+      return this.state.clients.filter((v)=>v.balance>0)
+    }
+
+    if (this.state.showClientsState==3) {
+      return this.state.clients.filter((v)=>v.balance<=0)
+    }
+
+    return this.state.clients
+  }
+
   deliteClient = (id) => {
     if ( this.state.clients.findIndex(v=>v.id==id)==-1) { //для нового клиента "отменить"
       this.setState({newClientState: false, lastId: this.state.lastId-1});
@@ -79,17 +91,7 @@ class MobileCompany extends React.PureComponent {
 
     let tableHeader = ['Фамилия', 'Имя', 'Отчество', 'Баланс', 'Статус', 'Редактировать', 'Удалить'];
 
-    let currClients = this.state.clients;
-
-    if (this.state.showClientsState==2) {
-      currClients = currClients.filter((v)=>v.balance>0)
-    }
-
-    if (this.state.showClientsState==3) {
-      currClients = currClients.filter((v)=>v.balance<=0)
-    }
-
-    var clientsCode=currClients.map( v =>
+    var clientsCode=this.getCurrentClientsArr().map( v =>
       <MobileClient key={v.id} client={v} />
     );
 
