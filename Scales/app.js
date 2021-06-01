@@ -64,7 +64,6 @@ myScales.add(appleGolden);
 myScales.add(appleRed);
 myScales.add(tomatoCherry);
 myScales.add(tomatoBlack);
-console.log(appleAnton.getName());
 console.log(myScales.getSumScale());
 console.log(myScales.getNameList());
 //# sourceMappingURL=app.js.map
