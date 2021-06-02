@@ -1,19 +1,17 @@
-type ProdType={weight:number, name:string, getScale ():number, getName():string}
-
 class Scales {
 
-    productsArr:Array<ProdType> = [];
+    productsArr:Array<Product> = [];
 
-    add (prod:ProdType):void {
+    add (prod:Product):void {
         this.productsArr.push(prod);
     }
 
     getSumScale ():number {
-        return this.productsArr.reduce((r:number,v:ProdType):number=>r+v.weight,0)
+        return this.productsArr.reduce((r:number,v:Product):number=>r+v.getScale(),0)
     }
 
     getNameList ():Array<string> {
-        return this.productsArr.map((v:ProdType):string=>v.getName())
+        return this.productsArr.map((v:Product):string=>v.getName())
     }
 }
 
