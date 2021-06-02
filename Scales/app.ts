@@ -50,11 +50,11 @@ class Tomato extends Product {
 
 let myScales:Scales = new Scales;
 
-let appleGolden:Apple = new Apple(5, "Яблоко Голден");
-let appleAnton:Apple = new Apple(3, "Яблоко Антоновка");
-let appleRed:Apple = new Apple(4, "Яблоко Ред");
-let tomatoCherry:Tomato = new Tomato(8, "Помидор Чери");
-let tomatoBlack:Tomato = new Tomato(1, "Помидор Чёрный принц");
+let appleGolden:Product = new Apple(5, "Яблоко Голден");
+let appleAnton:Product = new Apple(3, "Яблоко Антоновка");
+let appleRed:Product = new Apple(4, "Яблоко Ред");
+let tomatoCherry:Product = new Tomato(8, "Помидор Чери");
+let tomatoBlack:Product = new Tomato(1, "Помидор Чёрный принц");
 
 myScales.add(appleAnton);
 myScales.add(appleGolden);
