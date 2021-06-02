@@ -19,7 +19,7 @@ var Scales = /** @class */ (function () {
         this.productsArr.push(prod);
     };
     Scales.prototype.getSumScale = function () {
-        return this.productsArr.reduce(function (r, v) { return r + v.weight; }, 0);
+        return this.productsArr.reduce(function (r, v) { return r + v.getScale(); }, 0);
     };
     Scales.prototype.getNameList = function () {
         return this.productsArr.map(function (v) { return v.getName(); });
