@@ -16,3 +16,7 @@ https://anna3024.github.io/FD3-Kurban/RainbowFrameHOC/ - task7 "RainbowFrameHOC"
 https://anna3024.github.io/FD3-Kurban/Mobile/ - task8 "Mobile"
 
 https://anna3024.github.io/FD3-Kurban/Scales/ - task10 "Scales"
+
+https://anna3024.github.io/FD3-Kurban/Scales2/ - task11 "Scales2"
+
+https://anna3024.github.io/FD3-Kurban/Scales3/ - task12 "Scales3"
